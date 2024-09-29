@@ -11,7 +11,7 @@ const SingleBlog = () => {
     const [blog, setBlog] = useState({})
     console.log(id)
     const fetchSingleBlog = async () => {
-        const response = await axios.get(`http://localhost:3000/blog/${id}`)
+        const response = await axios.get(`https://blogbackend-bc6e.onrender.com/${id}`)
         console.log(response.data.data);
         setBlog(response.data.data)
     }
@@ -22,7 +22,7 @@ const SingleBlog = () => {
 
 
     const deleteBlog = async () => {
-        const response = await axios.delete("http://localhost:3000/blog/" + id)
+        const response = await axios.delete("https://blogbackend-bc6e.onrender.com/blog/" + id)
 
         if (response.status === 200) {
             navigate("/")
