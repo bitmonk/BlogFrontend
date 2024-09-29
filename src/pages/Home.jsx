@@ -1,8 +1,7 @@
 import axios from "axios"
 import Card from "../components/Card"
-import Navbar from "../components/navbar"
+import Navbar from "../components/Navbar"
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 
 function Home() {
